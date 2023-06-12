@@ -3,3 +3,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-menu {
+  .menu {
+    @apply flex flex-row gap-4;
+    a {
+      @apply block;
+    }
+    > li {
+      @apply flex flex-row gap-2;
+      @apply py-4 px-3;
+
+      &.menu-item-has-children {
+        @apply relative;
+        @apply pl-3 pr-6;
+
+        &::after {
+          content: url("../image/svg/angle-down.svg");
+          @apply mt-px -mb-px;
+        }
+
+        &:hover > .sub-menu {
+          @apply block;
+        }
+
+        > .sub-menu {
+          @apply hidden rounded-md p-8 absolute top-full w-fit -left-full whitespace-nowrap z-10 bg-surface text-on-surface;
+
+          > li.menu-item-has-children {
+            > a {
+              @apply mb-4 cursor-default pointer-events-none text-[#757575];
+            }
+            > .sub-menu {
+              @apply flex flex-col gap-1.5;
+              > li > a {
+                @apply font-bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
