@@ -28,11 +28,12 @@
         }
 
         > .sub-menu {
-          @apply hidden rounded-md p-8 absolute top-full w-fit -left-full whitespace-nowrap z-10 bg-surface text-on-surface;
+          @apply hidden rounded-sm p-8 absolute top-full w-fit -left-full whitespace-nowrap z-10 bg-surface text-on-surface;
 
           > li.menu-item-has-children {
             > a {
-              @apply mb-4 cursor-default pointer-events-none text-[#757575];
+              @apply mb-4 cursor-default pointer-events-none;
+              /* @apply text-[#757575]; */
             }
             > .sub-menu {
               @apply flex flex-col gap-1.5;
