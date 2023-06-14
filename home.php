@@ -2,7 +2,7 @@
 
 
 <main class="w-3/4">
-    <?php get_template_part('template-parts/content', 'main') ?>
+    <?php get_template_part('template-parts/content', 'blog') ?>
 </main>
 <aside class="w-1/4">
     <?php get_template_part('template-parts/content', 'aside') ?>
