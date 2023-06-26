@@ -47,3 +47,10 @@
     }
   }
 }
+
+.page-numbers {
+  @apply block px-4 py-2 border border-[#CFCFCF] rounded-md text-on-surface hover:bg-primary hover:text-on-primary hover:border-on-primary;
+  &.current {
+    @apply bg-primary text-on-primary border-on-primary;
+  }
+}

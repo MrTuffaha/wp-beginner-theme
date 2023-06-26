@@ -15,6 +15,7 @@ export default {
                 'on-secondary': 'var(--wp--preset--color--on-secondary)',
                 'on-background': 'var(--wp--preset--color--on-background)',
                 'on-surface': 'var(--wp--preset--color--on-surface)',
+                'on-surface-border': 'var(--wp--preset--color--on-surface-border)',
                 'on-error': 'var(--wp--preset--color--on-error)',
                 'text-headers': 'var(--wp--preset--color--text-headers)',
             }
